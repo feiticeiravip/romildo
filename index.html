@@ -436,6 +436,7 @@
                         <p><strong>Termos de Uso</strong></p>
                         <p>Ao usar o Acertos Club, você concorda em cumprir nossas regras. Nosso serviço é destinado a maiores de 18 anos, e o uso indevido, como tentativa de fraude, resultará em suspensão da conta. Os bônus são creditados conforme as regras promocionais e não podem ser transferidos. Nos reservamos o direito de atualizar estes termos a qualquer momento, com notificação prévia aos usuários.</p>
                         <p>Para dúvidas, entre em contato pelo nosso suporte no WhatsApp: <a href="https://api.whatsapp.com/send?phone=+5561981127992&text=Ol%C3%A1,%20preciso%20de%20ajuda">+55 61 98112-7992</a>.</p>
+                        <button onclick="window.open('https://tigerclub.com.br', '_blank')" class="mt-4 green">BANCA PARCEIRA</button>
                     </div>
                 </div>
             </div>
@@ -713,7 +714,7 @@
             function shareOnWhatsApp(banca, drawTime, palpites) {
                 console.log(`shareOnWhatsApp: banca=${banca}, drawTime=${drawTime}`);
                 try {
-                    const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nACESSE O SITE:\nhttps://acertosclub.com.br/`;
+                    const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nACESSE O SITE:\nhttps://reidamilhar.com/`;
                     const encodedMessage = encodeURIComponent(message);
                     window.open(`https://api.whatsapp.com/send?text=${encodedMessage}`, '_blank');
                 } catch (e) {
