@@ -58,9 +58,6 @@
     header.feiticeira {
       background: #1a3c34;
     }
-    header.brazz {
-      background: #000000;
-    }
     header img {
       height: 35px;
       margin-right: 10px;
@@ -83,7 +80,7 @@
       display: flex;
       flex-direction: column;
     }
-    #acertos, #aguia, #feiticeira, #brazz, #suporte {
+    #acertos, #aguia, #feiticeira, #suporte {
       width: 100%;
       height: 100%;
       transition: opacity 0.5s ease-in-out, transform 0.3s ease;
@@ -133,9 +130,6 @@
     footer.feiticeira {
       background: #1a3c34;
     }
-    footer.brazz {
-      background: #000000;
-    }
     .footer-bar {
       height: 20px;
       width: 100%;
@@ -149,9 +143,6 @@
     }
     .footer-bar.feiticeira {
       background: #1a3c34;
-    }
-    .footer-bar.brazz {
-      background: #000000;
     }
     footer .row {
       display: flex;
@@ -326,9 +317,6 @@
     <div id="feiticeira" class="hidden">
       <iframe allow="clipboard-read; clipboard-write" src="https://app.bancabrasileira.com.br/pr/kNCaMqXJ" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
     </div>
-    <div id="brazz" class="hidden">
-      <iframe allow="clipboard-read; clipboard-write" src="https://app.acertosclub.bet/pr/ruhvNPxt" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-    </div>
     <div id="suporte" class="hidden">
       <div id="suporte-content"></div>
     </div>
@@ -348,10 +336,6 @@
         <img src="brasileirinha.png" alt="Banca Brasileira">
         Banca Brasileira
       </button>
-      <button onclick="mostrar('brazz')">
-        <img src="brazz.png" alt="Brazz">
-        Brazz
-      </button>
       <button onclick="mostrar('suporte')">
         <i class="fab fa-whatsapp"></i>
         Suporte
@@ -367,36 +351,34 @@
         const acertos = document.getElementById('acertos');
         const aguia = document.getElementById('aguia');
         const feiticeira = document.getElementById('feiticeira');
-        const brazz = document.getElementById('brazz');
         const suporte = document.getElementById('suporte');
         const suporteContent = document.getElementById('suporte-content');
         const header = document.getElementById('header');
         const footer = document.getElementById('footer');
         const footerBar = document.getElementById('footer-bar');
 
-        if (!acertos || !aguia || !feiticeira || !brazz || !suporte || !suporteContent || !header || !footer || !footerBar) {
-          console.error('Um ou mais elementos principais não encontrados:', { acertos, aguia, feiticeira, brazz, suporte, suporteContent, header, footer, footerBar });
+        if (!acertos || !aguia || !feiticeira || !suporte || !suporteContent || !header || !footer || !footerBar) {
+          console.error('Um ou mais elementos principais não encontrados:', { acertos, aguia, feiticeira, suporte, suporteContent, header, footer, footerBar });
           document.body.innerHTML = '<p class="error">Erro ao carregar a página. Contate o suporte: <a href="https://wa.me/556181127992">WhatsApp</a></p>';
           return;
         }
 
         if (id === 'suporte') {
-          window.open('https://wa.me/5583994073892?text=Ol%C3%A1%2C%20Suporte.%20Preciso%20de%20ajuda%21', '_blank');
+          window.open('https://wa.me/5561981127992?text=Ol%C3%A1%2C%20Suporte.%20Preciso%20de%20ajuda%21', '_blank');
           return;
         }
 
         acertos.style.display = id === 'acertos' ? 'block' : 'none';
         aguia.style.display = id === 'aguia' ? 'block' : 'none';
         feiticeira.style.display = id === 'feiticeira' ? 'block' : 'none';
-        brazz.style.display = id === 'brazz' ? 'block' : 'none';
         suporte.style.display = 'none';
 
         suporteContent.classList.toggle('visible', id === 'suporte');
 
         // Reset header and footer classes
-        header.classList.remove('tiger', 'feiticeira', 'brazz');
-        footer.classList.remove('tiger', 'feiticeira', 'brazz');
-        footerBar.classList.remove('tiger', 'feiticeira', 'brazz');
+        header.classList.remove('tiger', 'feiticeira');
+        footer.classList.remove('tiger', 'feiticeira');
+        footerBar.classList.remove('tiger', 'feiticeira');
 
         // Apply specific classes based on section
         if (id === 'aguia') {
@@ -407,10 +389,6 @@
           header.classList.add('feiticeira');
           footer.classList.add('feiticeira');
           footerBar.classList.add('feiticeira');
-        } else if (id === 'brazz') {
-          header.classList.add('brazz');
-          footer.classList.add('brazz');
-          footerBar.classList.add('brazz');
         }
 
         document.querySelectorAll('footer button').forEach(button => {
