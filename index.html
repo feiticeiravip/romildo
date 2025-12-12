@@ -1,425 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0N3WWWQ7V"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-V0N3WWWQ7V');
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; frame-src *; connect-src *;">
-  <meta name="description" content="Acertos Club - Melhor banca do Brasil!">
-  <meta name="keywords" content="Acertos Club, apostas online, banca online, jogos de aposta">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Acertos Club - Banca Online">
-  <meta property="og:description" content="Descubra a melhor banca online com Acertos Club!">
-  <meta property="og:url" content="https://acertosbet.club">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://acertosbet.club/og-image.jpg">
-  <title>Acertos Club - Melhor Banca do Brasil</title>
-  <link rel="icon" href="acertos.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    <title>Águia Oficial • Banca Águia Oficial</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="aguiaoficial.png">
+
+    <!-- SEO PARA RANQUEAR A Banca Águia Oficial -->
+    <link rel="canonical" href="https://bancaaguiaoficial.bar/">
+
+    <meta name="description" content="Mini-site oficial da Águia Oficial — Plataforma parceira para acesso rápido e suporte via WhatsApp. Este domínio faz parte da rede de autoridade para a Banca Águia Oficial." />
+    <meta name="keywords" content="Águia Oficial, Banca Águia Oficial, banca aguia, banca oficial, plataformas, recargas, banca brasileira, feiticeira vip, pantera negra, águia prime" />
+    <meta name="author" content="Águia Oficial" />
+
+    <!-- SOCIAL -->
+    <meta property="og:title" content="Águia Oficial • Acesso Rápido">
+    <meta property="og:description" content="Rede oficial de mini-sites da Banca Águia Oficial. Acesso rápido e suporte 24h.">
+    <meta property="og:image" content="aguiaoficial.png">
+    <meta property="og:url" content="https://bancaaguiaoficial.bar/">
+
+    <!-- SCHEMA GOOGLE -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Águia Oficial",
+        "url": "https://bancaaguiaoficial.bar",
+        "logo": "aguiaoficial.png",
+        "description": "Rede oficial da Águia Oficial com mini-sites otimizados para SEO e acesso rápido às plataformas parceiras."
     }
-    body, html {
-      font-family: 'Roboto', sans-serif;
-      background: #f4f6f8;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      color: #1a1a1a;
-      overflow-x: hidden;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 10px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      height: 50px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-      background: linear-gradient(135deg, #f97316, #ea580c);
-    }
-    header.tiger {
-      background: #4b4b4b;
-    }
-    header.feiticeira {
-      background: #1a3c34;
-    }
-    header img {
-      height: 35px;
-      margin-right: 10px;
-      transition: transform 0.3s ease;
-    }
-    header img:hover {
-      transform: rotate(10deg) scale(1.1);
-    }
-    header h1 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #fff;
-      letter-spacing: 1px;
-    }
-    #main-content {
-      flex: 1;
-      margin-top: 50px;
-      margin-bottom: 60px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    #acertos, #aguia, #feiticeira, #suporte {
-      width: 100%;
-      height: 100%;
-      transition: opacity 0.5s ease-in-out, transform 0.3s ease;
-    }
-    #suporte {
-      padding: 16px;
-      max-width: 600px;
-      margin: 0 auto;
-      display: none;
-    }
-    #suporte-content {
-      padding: 16px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-      width: 100%;
-      opacity: 0;
-    }
-    #suporte-content.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-      border-radius: 10px;
-    }
-    footer {
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
-      border-top: 2px solid #e0e6ec;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 60px;
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
-      z-index: 10;
-      gap: 6px;
-      background: linear-gradient(135deg, #f97316, #ea580c);
-    }
-    footer.tiger {
-      background: #4b4b4b;
-    }
-    footer.feiticeira {
-      background: #1a3c34;
-    }
-    .footer-bar {
-      height: 20px;
-      width: 100%;
-      position: fixed;
-      bottom: -20px;
-      z-index: 9;
-      background: linear-gradient(135deg, #f97316, #ea580c);
-    }
-    .footer-bar.tiger {
-      background: #4b4b4b;
-    }
-    .footer-bar.feiticeira {
-      background: #1a3c34;
-    }
-    footer .row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 48px;
-      gap: 4px;
-    }
-    footer button {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      font-size: 14px;
-      font-weight: 500;
-      color: #fff;
-      cursor: pointer;
-      padding: 4px;
-      border-radius: 8px;
-      transition: all 0.3s;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
-      flex: 1;
-      justify-content: center;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    footer button.selected {
-      background: rgba(255, 255, 255, 0.3);
-      font-weight: 600;
-    }
-    footer button img {
-      height: 28px;
-      width: 28px;
-    }
-    footer button i {
-      font-size: 28px;
-    }
-    footer button:hover {
-      background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    footer button:active {
-      transform: scale(0.95);
-    }
-    button:not(footer button) {
-      background: #f59e0b;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
-      border: none;
-      padding: 12px;
-      border-radius: 8px;
-      font-size: 14px;
-      width: 100%;
-      margin: 8px 0;
-      transition: background 0.2s, transform 0.1s;
-    }
-    button:not(footer button):hover {
-      background: #d97706;
-    }
-    button:not(footer button):active {
-      transform: scale(0.98);
-    }
-    button.green {
-      background: #10b981;
-    }
-    button.green:hover {
-      background: #059669;
-    }
-    button:disabled {
-      background: #d1d5db;
-      cursor: not-allowed;
-      transform: none;
-    }
-    .error {
-      color: #ef4444;
-      font-size: 14px;
-      margin: 10px 0;
-      padding: 10px;
-      background: #fef2f2;
-      border-radius: 6px;
-    }
-    .success {
-      color: #10b981;
-      font-size: 14px;
-      margin: 10px 0;
-      padding: 10px;
-      background: #ecfdf5;
-      border-radius: 6px;
-    }
-    .loading {
-      font-size: 14px;
-      color: #374151;
-      margin: 10px 0;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .loading::before {
-      content: '';
-      width: 16px;
-      height: 16px;
-      border: 2px solid #f59e0b;
-      border-top-color: transparent;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    @media (max-width: 768px) {
-      header {
-        padding: 8px 15px;
-      }
-      header img {
-        height: 30px;
-      }
-      header h1 {
-        font-size: 16px;
-      }
-      #main-content {
-        margin-top: 50px;
-        margin-bottom: 60px;
-      }
-      #suporte {
-        padding: 12px;
-      }
-      #suporte-content {
-        max-width: 100%;
-      }
-      footer {
-        padding: 6px;
-        height: 60px;
-        bottom: 0;
-      }
-      .footer-bar {
-        height: 20px;
-        bottom: -20px;
-      }
-      footer .row {
-        height: 40px;
-      }
-      footer button {
-        font-size: 12px;
-        padding: 4px;
-      }
-      footer button img {
-        height: 24px;
-        width: 24px;
-      }
-      footer button i {
-        font-size: 24px;
-      }
-    }
-  </style>
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        /* IFRAME */
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        /* BOTÃO WHATSAPP */
+        .whatsapp-btn {
+            position: fixed;
+            right: 15px;
+            bottom: 90px;
+            background: #25d366;
+            padding: 12px 14px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #000;
+            z-index: 9999;
+        }
+
+        .whatsapp-btn img {
+            width: 35px;
+            height: 35px;
+        }
+
+        /* MENU INFERIOR */
+        .menu-btn {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #111;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 0 10px #000;
+            z-index: 9999;
+        }
+
+        /* BOX DOS LINKS */
+        .menu-box {
+            position: fixed;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.9);
+            padding: 12px;
+            border-radius: 8px;
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 9999;
+        }
+
+        .menu-link {
+            background: #222;
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid #444;
+        }
+
+        .menu-link:hover {
+            background: #333;
+        }
+    </style>
 </head>
 <body>
-  <header id="header">
-    <img src="acertos.png" alt="Acertos Club Logo">
-    <h1>ACERTOS CLUB</h1>
-  </header>
 
-  <div id="main-content">
-    <div id="acertos">
-      <iframe allow="clipboard-read; clipboard-write" src="https://app.acertos.club/pr/Brj5b9RM" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-    </div>
-    <div id="aguia" class="hidden">
-      <iframe allow="clipboard-read; clipboard-write" src="https://app.tigersclub.vip/pr/SDyz43qa" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-    </div>
-    <div id="feiticeira" class="hidden">
-      <iframe allow="clipboard-read; clipboard-write" src="https://app.bancabrasileira.com.br/pr/kNCaMqXJ" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-write"></iframe>
-    </div>
-    <div id="suporte" class="hidden">
-      <div id="suporte-content"></div>
-    </div>
-  </div>
+    <!-- IFRAME -->
+    <iframe 
+        src="https://app.aguiaoficial.com/pr/XvrHVdt2"
+        allow="clipboard-write; autoplay; encrypted-media; fullscreen; geolocation; microphone; camera; payment"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation">
+    </iframe>
 
-  <footer id="footer">
-    <div class="row">
-      <button onclick="mostrar('acertos')" class="selected">
-        <img src="acertos.png" alt="Acertos Club">
-        Acertos Club
-      </button>
-      <button onclick="mostrar('aguia')">
-        <img src="tiger.png" alt="Tiger Club">
-        Tiger Club
-      </button>
-      <button onclick="mostrar('feiticeira')">
-        <img src="brasileirinha.png" alt="Banca Brasileira">
-        Banca Brasileira
-      </button>
-      <button onclick="mostrar('suporte')">
-        <i class="fab fa-whatsapp"></i>
-        Suporte
-      </button>
+    <!-- BOTÃO WHATSAPP -->
+    <a class="whatsapp-btn" 
+       href="https://wa.me/5583993370071?text=Suporte,%20preciso%20de%20ajuda!" 
+       target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    </a>
+
+    <!-- BOTÃO MENU -->
+    <div class="menu-btn" onclick="toggleMenu()">APPs PARCEIROS</div>
+
+    <!-- BOX LINKS -->
+    <div class="menu-box" id="menuBox">
+        <a class="menu-link" href="https://bancabrasileirabet.com.br" target="_blank">Banca Brasileira</a>
+        <a class="menu-link" href="https://bancaaguiaoficial.bar" target="_blank">Águia Oficial</a>
+        <a class="menu-link" href="https://bancafeiticeiravip.bar" target="_blank">Feiticeira Vip</a>
+        <a class="menu-link" href="https://bancaaguiaprime.bar" target="_blank">Águia Prime</a>
+        <a class="menu-link" href="https://bancapanteranegra.bar" target="_blank">Pantera Negra</a>
     </div>
-  </footer>
-  <div id="footer-bar" class="footer-bar"></div>
 
-  <script>
-    function mostrar(id) {
-      console.log(`mostrar: id=${id}`);
-      try {
-        const acertos = document.getElementById('acertos');
-        const aguia = document.getElementById('aguia');
-        const feiticeira = document.getElementById('feiticeira');
-        const suporte = document.getElementById('suporte');
-        const suporteContent = document.getElementById('suporte-content');
-        const header = document.getElementById('header');
-        const footer = document.getElementById('footer');
-        const footerBar = document.getElementById('footer-bar');
-
-        if (!acertos || !aguia || !feiticeira || !suporte || !suporteContent || !header || !footer || !footerBar) {
-          console.error('Um ou mais elementos principais não encontrados:', { acertos, aguia, feiticeira, suporte, suporteContent, header, footer, footerBar });
-          document.body.innerHTML = '<p class="error">Erro ao carregar a página. Contate o suporte: <a href="https://wa.me/556181127992">WhatsApp</a></p>';
-          return;
+    <script>
+        function toggleMenu() {
+            const box = document.getElementById("menuBox");
+            box.style.display = box.style.display === "flex" ? "none" : "flex";
         }
+    </script>
 
-        if (id === 'suporte') {
-          window.open('https://wa.me/5561981127992?text=Ol%C3%A1%2C%20Suporte.%20Preciso%20de%20ajuda%21', '_blank');
-          return;
-        }
-
-        acertos.style.display = id === 'acertos' ? 'block' : 'none';
-        aguia.style.display = id === 'aguia' ? 'block' : 'none';
-        feiticeira.style.display = id === 'feiticeira' ? 'block' : 'none';
-        suporte.style.display = 'none';
-
-        suporteContent.classList.toggle('visible', id === 'suporte');
-
-        // Reset header and footer classes
-        header.classList.remove('tiger', 'feiticeira');
-        footer.classList.remove('tiger', 'feiticeira');
-        footerBar.classList.remove('tiger', 'feiticeira');
-
-        // Apply specific classes based on section
-        if (id === 'aguia') {
-          header.classList.add('tiger');
-          footer.classList.add('tiger');
-          footerBar.classList.add('tiger');
-        } else if (id === 'feiticeira') {
-          header.classList.add('feiticeira');
-          footer.classList.add('feiticeira');
-          footerBar.classList.add('feiticeira');
-        }
-
-        document.querySelectorAll('footer button').forEach(button => {
-          button.classList.remove('selected');
-          if (button.getAttribute('onclick') === `mostrar('${id}')`) {
-            button.classList.add('selected');
-          }
-        });
-      } catch (e) {
-        console.error('Erro na função mostrar:', e);
-        document.body.innerHTML = '<p class="error">Erro crítico ao carregar a seção. Contate o suporte: <a href="https://wa.me/556181127992">WhatsApp</a></p>';
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      console.log('DOMContentLoaded: Iniciando');
-      try {
-        mostrar('acertos');
-      } catch (e) {
-        console.error('Erro na inicialização:', e);
-        document.body.innerHTML = '<p class="error">Erro ao carregar a página. Contate o suporte: <a href="https://wa.me/556181127992">WhatsApp</a></p>';
-      }
-
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(registrations => {
-          for (let registration of registrations) {
-            registration.unregister().catch(e => console.warn('Erro ao desregistrar service worker:', e));
-          }
-        }).catch(e => console.warn('Erro ao obter registros de service worker:', e));
-      }
-    });
-  </script>
 </body>
 </html>
