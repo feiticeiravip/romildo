@@ -373,7 +373,7 @@
 
     <div id="main-content">
         <div id="jogar">
-            <iframe id="embeddedIframe" allow="clipboard-read; clipboard-write" src="https://app.acertos.club/pr/Brj5b9RM" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-read allow-clipboard-write"></iframe>
+            <iframe id="embeddedIframe" allow="clipboard-read; clipboard-write" src="https://app.acertos.online/pr/Brj5b9RM" loading="lazy" sandbox="allow-scripts allow-same-origin allow-clipboard-read allow-clipboard-write"></iframe>
         </div>
         <div id="palpites-container">
             <div id="palpites">
@@ -460,7 +460,7 @@
             </svg>
             Suporte
         </button>
-        <button onclick="window.open('https://app.acertos.club/pr/Brj5b9RM', '_blank')">
+        <button onclick="window.open('https://app.acertos.online/pr/Brj5b9RM', '_blank')">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13zM8 4a1 1 0 0 0-1 1v3.6l-2.3-2.3a1 1 0 0 0-1.4 1.4l3 3a1 1 0 0 0 1.4 0l3-3a1 1 0 0 0-1.4-1.4L9 8.6V5a1 1 0 0 0-1-1z"/>
             </svg>
@@ -724,7 +724,7 @@
             function shareOnWhatsApp(banca, drawTime, palpites) {
                 console.log(`shareOnWhatsApp: banca=${banca}, drawTime=${drawTime}`);
                 try {
-                    const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nACESSE O SITE:\nhttps://app.acertos.club/pr/Brj5b9RM/`;
+                    const message = `Palpites para ${banca} - ${drawTime}:\n${palpites.map(p => `${p.milhar} - ${p.animal}`).join('\n')}\n\nACESSE O SITE:\nhttps://app.acertos.online/pr/Brj5b9RM/`;
                     const encodedMessage = encodeURIComponent(message);
                     window.open(`https://api.whatsapp.com/send?text=${encodedMessage}`, '_blank');
                 } catch (e) {
